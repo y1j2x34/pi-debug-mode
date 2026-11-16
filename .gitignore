@@ -1,0 +1,4 @@
+node_modules
+
+# Local session/agent data
+.workbuddy/

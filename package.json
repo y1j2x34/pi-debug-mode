@@ -1,0 +1,25 @@
+{
+  "name": "pi-debug-mode",
+  "version": "0.1.0",
+  "description": "Cursor Debug Mode for pi / oh-my-pi: hypotheses → runtime probe evidence → human-in-the-loop repro → minimal fix → mechanical cleanup",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "omp-plugin",
+    "oh-my-pi",
+    "debug",
+    "cursor-debug-mode"
+  ],
+  "pi": {
+    "extensions": ["./extensions/index.ts"]
+  },
+  "omp": {
+    "extensions": ["./extensions/index.ts"]
+  },
+  "files": [
+    "extensions",
+    "lib",
+    "README.md"
+  ]
+}
