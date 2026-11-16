@@ -37,27 +37,27 @@ The host API surface used here is identical on both sides: `pi.registerTool` / `
 
 ```bash
 # Option 1: install from a local directory (recommended)
-pi install /path/to/pi-debug-mode-plugin
+pi install /path/to/pi-debug-mode
 
 # Option 2: copy into the auto-discovery directory
-cp -r pi-debug-mode-plugin ~/.pi/agent/extensions/pi-debug-mode
+cp -r pi-debug-mode ~/.pi/agent/extensions/pi-debug-mode
 
 # Option 3: quick trial
-pi -e /path/to/pi-debug-mode-plugin/extensions/index.ts
+pi -e /path/to/pi-debug-mode/extensions/index.ts
 ```
 
 ### omp
 
 ```bash
 # Option 1: install from a local directory
-omp install /path/to/pi-debug-mode-plugin
+omp install /path/to/pi-debug-mode
 
 # Option 2: copy into the auto-discovery directory
-cp -r pi-debug-mode-plugin ~/.omp/agent/extensions/pi-debug-mode
+cp -r pi-debug-mode ~/.omp/agent/extensions/pi-debug-mode
 # or project-local: .omp/extensions/pi-debug-mode
 
 # Option 3: quick trial
-omp --extension /path/to/pi-debug-mode-plugin/extensions/index.ts
+omp --extension /path/to/pi-debug-mode/extensions/index.ts
 ```
 
 Restart the session (or run `/reload` / `/reload-plugins`) after installing; the `debug_*` tools will appear.
@@ -94,7 +94,7 @@ Probe transport: business code calls `fetch('127.0.0.1:port/probe', { keepalive:
 ## Project layout
 
 ```
-pi-debug-mode-plugin/
+pi-debug-mode/
 ├── package.json          # dual pi + omp manifest
 ├── extensions/
 │   └── index.ts          # entry: 5 tools + 6 commands + lifecycle hooks
